@@ -43,5 +43,17 @@ public class MainActivity extends AppCompatActivity {
                 vKubus.setText(df.format(v_Kubus));
             }
         });
+        bReset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Reset inputAngka
+                inputAngka.setText("");
+
+                // Reset hasil perhitungan
+                lpKubus.setText("0");
+                vKubus.setText("0");
+            }
+        });
+
     }
 }
